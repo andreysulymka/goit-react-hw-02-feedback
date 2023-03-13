@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 import { List, Button } from "./FeedbackButtons.styled";
 
 export function FeedbackButton({ options, onHandle }) {
@@ -16,3 +16,8 @@ export function FeedbackButton({ options, onHandle }) {
         </List>
     )
 }
+
+FeedbackButton.propTypes = {
+    options: PropTypes.array,
+    onHandle: PropTypes.func
+};

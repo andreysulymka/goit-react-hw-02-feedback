@@ -7,7 +7,7 @@ import { Container } from "./App.styled";
 
 
 
-export class App extends Component {
+export default class App extends Component {
 
   static defaultProps = {
     initialGood: 0,
